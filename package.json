@@ -1,0 +1,25 @@
+{
+  "name": "tennis-courts-availability",
+  "version": "1.0.0",
+  "description": "Tennis courts availability checker for Supabase Edge Functions",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "dev": "supabase functions serve tennis-courts --env-file ./supabase/.env.local",
+    "deploy": "supabase functions deploy tennis-courts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "typescript": "^5.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.52.0"
+  },
+  "type": "module"
+}
